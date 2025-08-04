@@ -6,6 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "G",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Purcela/Questionnaire.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Purcela/Questionnaire/issues"
+  },
+  "homepage": "https://github.com/Purcela/Questionnaire#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.2"
+  }
 }
