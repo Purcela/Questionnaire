@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,38 +11,31 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        background-color: green;
+        background-color: lightgray;
         a {
             img {
                 width: 50px;
                 height: 50px;
+                border-radius: 50%;
             }
         }
-        .users-info {
-            img {
-                width: 50px;
-                height: 50px;
-                background-color: red;  
-            }          
+        .complated-icon {
+            display: none;
         }
-    }      
-    .Questionnaire-info {
-        width: 80%;
-        min-height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color: lightgray;
-        border: 2px solid grey;
-    }
-    
+    }  
     main {
         width: 80%;
-        min-height: 300px;
+        min-height: 90vh;
         display: flex;
         flex-direction: column;
         background-color: lightgray;
+        .Questionnaire-info {
+            width: 100%;
+            min-height: 100px;
+            text-align: center;
+            resize: vertical;
+            padding: 5px;
+        } 
         .Necessary {
             width: 100%;
             height: 150px;            
@@ -111,7 +104,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: grey;
+            background-color: lightgrey;
         }
         .admin-function {
             width: 100%;
@@ -119,7 +112,8 @@ body {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-            background-color: grey;
+            background-color: lightgrey;
+            display: none;
         }
     }
 }

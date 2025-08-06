@@ -16,28 +16,29 @@
 </head>
 <body>
     <header class="admin-header">
-        <a href="index.html">
+        <a class="index-icon" href="index.html">
             <img src="images/create.jpg" alt="index">
         </a>
-        <a href="register.html">
+        <a class="register-icon" href="register.html">
             <img src="images/user.png" alt="index">
         </a>
-        <a href="completed.html">
-            <img src="images/lists.png" alt="lists">
+        <a class="complated-icon" href="completed.html">
+            <img src="images/complated.jpg" alt="lists">
         </a>
     </header>
     <main class="user-main">
-        <div class="form-box login">
-            <h2> სისტემაში შესვლა </h2>
-                <form class="form-content" action="#">
-                        <input type="text" placeholder="მეილი" required>
-                        <input type="password" placeholder="პაროლი" required>
-                    <a href="#" class="forgot-pass-link"> დაგავიწყდა პაროლი? </a>
-                    <button type="submit"> შესვლა </button>
-                </form>
-        </div>
-        <div class="form-box signup">
-            <h2> რეგისტრაცია </h2>
+        <div class="register-box">
+            <div class="form-box login">
+                <h2> სისტემაში შესვლა </h2>
+                    <form class="form-content" action="#">
+                            <input type="text" placeholder="მეილი" required>
+                            <input type="password" placeholder="პაროლი" required>
+                        <a href="#" class="forgot-pass-link"> დაგავიწყდა პაროლი? </a>
+                        <button type="submit"> შესვლა </button>
+                    </form>
+            </div>
+            <div class="form-box signup">
+                <h2> რეგისტრაცია </h2>
                 <form class="form-content" action="#">
                         <input type="text" placeholder="მეილი" required>
                         <input type="password" placeholder="პაროლი"required>
@@ -50,9 +51,17 @@
                     </div>
                     <button type="submit"> რეგისტრაცია </button>
                 </form>
+            </div>
         </div>
-    </main>
-    
+        <div class="profile-info">
+            <div class="user-info">
+                <img class="profile-image" src="images/profile.png" alt="User" />
+                <h2 class="profile-name"> მომხმარებელი </h2>
+                <p class="profile-email"> მეილის მისამართი </p>
+                <button> გამოსვმა </button>
+            </div>
+        </div>
+    </main>    
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -70,7 +70,7 @@ a {
 }
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,33 +82,29 @@ body header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: green;
+  background-color: lightgray;
 }
 body header a img {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
 }
-body header .users-info img {
-  width: 50px;
-  height: 50px;
-  background-color: red;
-}
-body .Questionnaire-info {
-  width: 80%;
-  min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: lightgray;
-  border: 2px solid grey;
+body header .complated-icon {
+  display: none;
 }
 body main {
   width: 80%;
-  min-height: 300px;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   background-color: lightgray;
+}
+body main .Questionnaire-info {
+  width: 100%;
+  min-height: 100px;
+  text-align: center;
+  resize: vertical;
+  padding: 5px;
 }
 body main .Necessary {
   width: 100%;
@@ -220,7 +216,7 @@ body main .user-submit {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: grey;
+  background-color: lightgrey;
 }
 body main .admin-function {
   width: 100%;
@@ -228,18 +224,24 @@ body main .admin-function {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: grey;
+  background-color: lightgrey;
+  display: none;
 }
 
 .user-main {
   width: 80%;
-  height: 100vh;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.user-main .register-box {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
-.user-main .form-box {
+.user-main .register-box .form-box {
   width: 30%;
   height: 300px;
   display: flex;
@@ -248,7 +250,7 @@ body main .admin-function {
   align-items: center;
   background-color: silver;
 }
-.user-main .form-box .form-content {
+.user-main .register-box .form-box .form-content {
   width: 60%;
   height: 150px;
   display: flex;
@@ -256,22 +258,67 @@ body main .admin-function {
   justify-content: space-evenly;
   align-items: center;
 }
-.user-main .form-box .form-content .forgot-pass-link {
+.user-main .register-box .form-box .form-content .forgot-pass-link {
   font-size: 12px;
 }
-.user-main .form-box .form-content .policy-text .agree {
+.user-main .register-box .form-box .form-content .policy-text .agree {
   font-size: 14px;
 }
+.user-main .profile-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.user-main .profile-info .user-info {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: grey;
+  border-radius: 20%;
+}
+.user-main .profile-info .user-info .profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: lightgray;
+}
 
-.file-box {
+.files-main {
+  width: 80%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+}
+.files-main .file-draft {
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid gray;
+}
+.files-main .file-draft .draft {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid gray;
+}
+.files-main .file-box {
   width: 100%;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0;
+  margin: 20px 0;
 }
-.file-box .files {
+.files-main .file-box .files {
   width: 40%;
   height: 100%;
   padding: 0 20px;
@@ -280,7 +327,7 @@ body main .admin-function {
   align-items: center;
   border: 1px solid gray;
 }
-.file-box .files1 {
+.files-main .file-box .files1 {
   width: 5%;
   height: 50px;
   display: flex;
@@ -288,7 +335,6 @@ body main .admin-function {
   justify-content: center;
   border: 1px solid gray;
 }
-
-.file-saved {
+.files-main .file-saved {
   margin: 1px 0;
 }
