@@ -1,0 +1,33 @@
+.user-main {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    .form-box {
+        width: 30%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: silver;
+        .form-content {
+            width: 60%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            .forgot-pass-link {
+                font-size: 12px;
+            }
+            .policy-text {
+                .agree {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
