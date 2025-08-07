@@ -3,48 +3,78 @@
     min-height: 90vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    background-color: lightgray;
-    .file-draft {
-        width: 90%;
-        margin-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-            border: 1px solid gray;
-        .draft {
-            width: 50px;
-            height: 50px;
-            margin: 10px;
-            border: 1px solid gray;
-        }
-    }
-    .file-box {
+        margin-top: 150px;  
+    .draft-box {
         width: 100%;
-        height: 50px;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        margin: 20px 0;
-        .files {
-            width: 40%;
-            height: 100%;
-            padding: 0 20px;
+        .file-draft {
+            width: 90%;
+            margin: 0 0 10px 0;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
             border: 1px solid gray;
+            background-color: lightgray;
+            .draft-minibox {
+                display: flex;
+                align-items: center;
+                .draft {
+                    width: 50px;
+                    min-height: 50px;
+                    margin: 10px;
+                    border: 1px solid gray;
+                }
+                .draft-name {
+                    max-width: 90%;
+                    text-wrap: wrap;
+                }
+            }
         }
-        .files1 {
-            width: 5%;
+        .file-box {
+            width: 90%;
             height: 50px;
             display: flex;
-            align-items: center;
             justify-content: center;
-            border: 1px solid gray;
+            align-items: center;
+            margin: 10px 0;
+            background-color: lightgray;
+            .files1 {
+                width: 5%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid gray;
+            }
+            .files {
+                width: 65%;
+                height: 100%;
+                padding: 0 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid gray;
+            }
+            .file-data {
+                width: 25%;
+            }
         }
+        .user-results {
+            width: 90%;
+            padding-bottom: 100px;
+            .file-saved {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+        
     }
-    .file-saved {
-        margin: 1px 0;
+    .download {        
+        height: 50px;
+        position: fixed;
+        bottom: 25px;
     }
 }

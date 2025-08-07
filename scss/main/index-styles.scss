@@ -5,13 +5,18 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0 5px;
+        background-image: url(/images/back.jpg);
+        background-position: center;
+        background-size: cover;
     header {
-        width: 80%;
+        width: 100%;
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        background-color: lightgray;
+        background-image: url(/images/cybersecurity.jpg);
+        background-position: center;
+        position: fixed;
         a {
             img {
                 width: 50px;
@@ -23,104 +28,177 @@ body {
             display: none;
         }
     }  
-    main {
+    .index-main {
         width: 80%;
         min-height: 90vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: lightgray;
-        .Questionnaire-info {
+        margin-top: 150px;        
+        .question-user {
             width: 100%;
-            min-height: 100px;
-            text-align: center;
-            resize: vertical;
-            padding: 5px;
-        } 
-        .Necessary {
-            width: 100%;
-            height: 150px;            
-            padding: 0 30px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            .Necessary-1,
-            .Necessary-2,
-            .Necessary-3,
-            .Necessary-4 {
-                width: 30%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;                
-                input,
-                select {
-                    width: 100%;
-                }
-            }
-            .Necessary-4 {
-                width: 100%;
-            }
-        }
-        .Questionnaire-1 {
-            margin-top: 50px;
-        }
-        .Questionnaire-1,
-        .Questionnaire-2,
-        .Questionnaire-3,
-        .Questionnaire-4 {
-            width: 100%;
-            height: 80px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            .question,
-            .question {
-                width: 50%;
-                border: 1px solid grey;
-                margin: 0 10px;
-                padding: 5px;
-                resize: none;
-            }
-            .answers-1,
-            .answers-2,
-            .answers-3,
-            .answers-4 {
-                width: auto;
-                display: flex;
-                align-items: center;
-                input {
-                    margin: 0 5px;
-                }
-            }
-            .answers-4 {
-                width: 45%;
-                border: 1px solid grey;
-                padding: 5px;
-                }
-        }
-        .user-submit {
-            width: 200px;
-            height: 50px;
-            margin-top: 50px;
-        }
-        .admin-function {
-            width: 100%;
-            height: 150px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-evenly;
-            background-color: lightgrey;
-            display: none;
-            .admin-input {
-                width: 400px;
-                height: 30px;
-            }
-            .admin-submit {                
+            .question-list1 {
+                width: 100%;
+                min-height: 500px;
+            }     
+            .user-submit {
                 width: 200px;
                 height: 50px;
+                position: fixed;
+                bottom: 25px;
             }
+        }
+        .question-admin {
+            width: 100%;
+            display: none;
+            .question-head {
+                width: 100%;
+                min-height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .Questionnaire-info {
+                    width: 95%;
+                    height: 80px;
+                    text-align: center;
+                    resize: none;
+                    padding: 5px;
+                }
+                .form-add {
+                    width: 30px;
+                    height: 40px;
+                    font-size: 26px;
+                }
+            } 
+            .Necessary-box {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .Necessary {
+                    width: 95%;
+                    height: 150px;            
+                    padding: 0 50px;
+                    margin-top: 30px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;                    
+                    border: 1px solid grey;
+                    border-radius: 20px;
+                    .Necessary-1,
+                    .Necessary-2,
+                    .Necessary-3,
+                    .Necessary-4 {
+                        width: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;                
+                        input,
+                        select {
+                            width: 100%;
+                        }
+                    }
+                    .Necessary-4 {
+                        width: 100%;
+                    }
+                }
+                .form-add {
+                    width: 30px;
+                    height: 40%;
+                    font-size: 26px;
+                    text-align: center;
+                    padding-bottom:5px ;
+                } 
+            }    
+            .Questionnaire-1 {
+                margin-top: 30px;
+            }
+            .Questionnaire-1,
+            .Questionnaire-2,
+            .Questionnaire-3,
+            .Questionnaire-4 {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .question {
+                    width: 45%;
+                    height: 40px;
+                    border: 1px solid grey;
+                    margin: 0 10px;
+                    padding: 5px;                   
+                    resize: none;
+                }
+                .answers-1,
+                .answers-2,
+                .answers-3,
+                .answers-4 {
+                    width: 45%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .add-radio,
+                    .add-other {
+                        display: none;
+                    }
+                    input {
+                        margin: 0 5px;
+                    }
+                }
+                .answers-4 {
+                    border: 1px solid grey;
+                    padding: 5px;
+                    resize: none;
+                }
+                .form-add {
+                    width: 30px;
+                    height: 40%;
+                    font-size: 26px;
+                    text-align: center;
+                    padding-bottom:5px ;
+                }
+            }
+            .finished-form {
+                width: 100%;
+                min-height: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid grey;
+                border-radius: 20px;
+                background-color: white;
+                margin-bottom: 200px;
+                .question-list {
+                    width: 100%;
+                    min-height: 100px;
+                    border-radius: 20px;
+                    background-color: white;
+                }
+                .admin-function {
+                    width: 400px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    position: fixed;
+                    bottom: 20px;
+                    .admin-input {
+                        width: 400px;
+                        height: 30px;
+                    }
+                    .admin-submit {                
+                        width: 200px;
+                        height: 50px;
+                    }
+                }
+            }
+            
         }
     }
 }

@@ -29,7 +29,7 @@
     <main class="user-main">
         <div class="register-box">
             <div class="form-box login">
-                <h2> სისტემაში შესვლა </h2>
+                <h2>  შესვლა </h2>
                     <form class="form-content" action="#">
                             <input type="text" placeholder="მეილი" required>
                             <input type="password" placeholder="პაროლი" required>
@@ -40,9 +40,9 @@
             <div class="form-box signup">
                 <h2> რეგისტრაცია </h2>
                 <form class="form-content" action="#">
-                        <input type="text" placeholder="მეილი" required>
-                        <input type="password" placeholder="პაროლი"required>
-                        <input type="password" placeholder="გაიმეორე პაროლი"required>
+                    <input type="text" placeholder="მეილი" required>
+                    <input type="password" placeholder="პაროლი"required>
+                    <input type="password" placeholder="გაიმეორე პაროლი"required>
                     <div class="policy-text">
                         <input type="checkbox" id="policy">
                         <label class="agree" for="policy">
@@ -55,10 +55,19 @@
         </div>
         <div class="profile-info">
             <div class="user-info">
-                <img class="profile-image" src="images/profile.png" alt="User" />
-                <h2 class="profile-name"> მომხმარებელი </h2>
-                <p class="profile-email"> მეილის მისამართი </p>
-                <button> გამოსვმა </button>
+                <div class="info-box">
+                    <img class="profile-image" src="images/profile.png" alt="User" />
+                    <div class="info">
+                        <h2 class="profile-name"> <!-- მომხმარებელი --> </h2> 
+                        <p class="profile-email"> <!-- მომხმარებლის მეილი --> </p>
+                    </div>
+                </div>
+                <button> გასვლა </button>
+                <p> პაროლის შეცვლა </p>
+                <input type="text" placeholder="ძველი პაროლი">
+                <input type="text" placeholder="ახალი პაროლი">
+                <input type="text" placeholder="გაიმეორე პაროლი">
+                <button> შეცვლა </button>
             </div>
         </div>
     </main>    

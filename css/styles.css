@@ -75,14 +75,19 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 5px;
+  background-image: url(/images/back.jpg);
+  background-position: center;
+  background-size: cover;
 }
 body header {
-  width: 80%;
+  width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: lightgray;
+  background-image: url(/images/cybersecurity.jpg);
+  background-position: center;
+  position: fixed;
 }
 body header a img {
   width: 50px;
@@ -92,145 +97,247 @@ body header a img {
 body header .complated-icon {
   display: none;
 }
-body main {
+body .index-main {
   width: 80%;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightgray;
+  margin-top: 150px;
 }
-body main .Questionnaire-info {
+body .index-main .question-user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .index-main .question-user .question-list1 {
+  width: 100%;
+  min-height: 500px;
+}
+body .index-main .question-user .user-submit {
+  width: 200px;
+  height: 50px;
+  position: fixed;
+  bottom: 25px;
+}
+body .index-main .question-admin {
+  width: 100%;
+  display: none;
+}
+body .index-main .question-admin .question-head {
   width: 100%;
   min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .index-main .question-admin .question-head .Questionnaire-info {
+  width: 95%;
+  height: 80px;
   text-align: center;
-  resize: vertical;
+  resize: none;
   padding: 5px;
 }
-body main .Necessary {
+body .index-main .question-admin .question-head .form-add {
+  width: 30px;
+  height: 40px;
+  font-size: 26px;
+}
+body .index-main .question-admin .Necessary-box {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .index-main .question-admin .Necessary-box .Necessary {
+  width: 95%;
   height: 150px;
-  padding: 0 30px;
+  padding: 0 50px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid grey;
+  border-radius: 20px;
 }
-body main .Necessary .Necessary-1,
-body main .Necessary .Necessary-2,
-body main .Necessary .Necessary-3,
-body main .Necessary .Necessary-4 {
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-1,
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-2,
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-3,
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-4 {
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body main .Necessary .Necessary-1 input,
-body main .Necessary .Necessary-1 select,
-body main .Necessary .Necessary-2 input,
-body main .Necessary .Necessary-2 select,
-body main .Necessary .Necessary-3 input,
-body main .Necessary .Necessary-3 select,
-body main .Necessary .Necessary-4 input,
-body main .Necessary .Necessary-4 select {
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-1 input,
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-1 select,
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-2 input,
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-2 select,
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-3 input,
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-3 select,
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-4 input,
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-4 select {
   width: 100%;
 }
-body main .Necessary .Necessary-4 {
+body .index-main .question-admin .Necessary-box .Necessary .Necessary-4 {
   width: 100%;
 }
-body main .Questionnaire-1 {
-  margin-top: 50px;
+body .index-main .question-admin .Necessary-box .form-add {
+  width: 30px;
+  height: 40%;
+  font-size: 26px;
+  text-align: center;
+  padding-bottom: 5px;
 }
-body main .Questionnaire-1,
-body main .Questionnaire-2,
-body main .Questionnaire-3,
-body main .Questionnaire-4 {
+body .index-main .question-admin .Questionnaire-1 {
+  margin-top: 30px;
+}
+body .index-main .question-admin .Questionnaire-1,
+body .index-main .question-admin .Questionnaire-2,
+body .index-main .question-admin .Questionnaire-3,
+body .index-main .question-admin .Questionnaire-4 {
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
-body main .Questionnaire-1 .question,
-body main .Questionnaire-1 .question,
-body main .Questionnaire-2 .question,
-body main .Questionnaire-2 .question,
-body main .Questionnaire-3 .question,
-body main .Questionnaire-3 .question,
-body main .Questionnaire-4 .question,
-body main .Questionnaire-4 .question {
-  width: 50%;
+body .index-main .question-admin .Questionnaire-1 .question,
+body .index-main .question-admin .Questionnaire-2 .question,
+body .index-main .question-admin .Questionnaire-3 .question,
+body .index-main .question-admin .Questionnaire-4 .question {
+  width: 45%;
+  height: 40px;
   border: 1px solid grey;
   margin: 0 10px;
   padding: 5px;
   resize: none;
 }
-body main .Questionnaire-1 .answers-1,
-body main .Questionnaire-1 .answers-2,
-body main .Questionnaire-1 .answers-3,
-body main .Questionnaire-1 .answers-4,
-body main .Questionnaire-2 .answers-1,
-body main .Questionnaire-2 .answers-2,
-body main .Questionnaire-2 .answers-3,
-body main .Questionnaire-2 .answers-4,
-body main .Questionnaire-3 .answers-1,
-body main .Questionnaire-3 .answers-2,
-body main .Questionnaire-3 .answers-3,
-body main .Questionnaire-3 .answers-4,
-body main .Questionnaire-4 .answers-1,
-body main .Questionnaire-4 .answers-2,
-body main .Questionnaire-4 .answers-3,
-body main .Questionnaire-4 .answers-4 {
-  width: auto;
+body .index-main .question-admin .Questionnaire-1 .answers-1,
+body .index-main .question-admin .Questionnaire-1 .answers-2,
+body .index-main .question-admin .Questionnaire-1 .answers-3,
+body .index-main .question-admin .Questionnaire-1 .answers-4,
+body .index-main .question-admin .Questionnaire-2 .answers-1,
+body .index-main .question-admin .Questionnaire-2 .answers-2,
+body .index-main .question-admin .Questionnaire-2 .answers-3,
+body .index-main .question-admin .Questionnaire-2 .answers-4,
+body .index-main .question-admin .Questionnaire-3 .answers-1,
+body .index-main .question-admin .Questionnaire-3 .answers-2,
+body .index-main .question-admin .Questionnaire-3 .answers-3,
+body .index-main .question-admin .Questionnaire-3 .answers-4,
+body .index-main .question-admin .Questionnaire-4 .answers-1,
+body .index-main .question-admin .Questionnaire-4 .answers-2,
+body .index-main .question-admin .Questionnaire-4 .answers-3,
+body .index-main .question-admin .Questionnaire-4 .answers-4 {
+  width: 45%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-body main .Questionnaire-1 .answers-1 input,
-body main .Questionnaire-1 .answers-2 input,
-body main .Questionnaire-1 .answers-3 input,
-body main .Questionnaire-1 .answers-4 input,
-body main .Questionnaire-2 .answers-1 input,
-body main .Questionnaire-2 .answers-2 input,
-body main .Questionnaire-2 .answers-3 input,
-body main .Questionnaire-2 .answers-4 input,
-body main .Questionnaire-3 .answers-1 input,
-body main .Questionnaire-3 .answers-2 input,
-body main .Questionnaire-3 .answers-3 input,
-body main .Questionnaire-3 .answers-4 input,
-body main .Questionnaire-4 .answers-1 input,
-body main .Questionnaire-4 .answers-2 input,
-body main .Questionnaire-4 .answers-3 input,
-body main .Questionnaire-4 .answers-4 input {
+body .index-main .question-admin .Questionnaire-1 .answers-1 .add-radio,
+body .index-main .question-admin .Questionnaire-1 .answers-1 .add-other,
+body .index-main .question-admin .Questionnaire-1 .answers-2 .add-radio,
+body .index-main .question-admin .Questionnaire-1 .answers-2 .add-other,
+body .index-main .question-admin .Questionnaire-1 .answers-3 .add-radio,
+body .index-main .question-admin .Questionnaire-1 .answers-3 .add-other,
+body .index-main .question-admin .Questionnaire-1 .answers-4 .add-radio,
+body .index-main .question-admin .Questionnaire-1 .answers-4 .add-other,
+body .index-main .question-admin .Questionnaire-2 .answers-1 .add-radio,
+body .index-main .question-admin .Questionnaire-2 .answers-1 .add-other,
+body .index-main .question-admin .Questionnaire-2 .answers-2 .add-radio,
+body .index-main .question-admin .Questionnaire-2 .answers-2 .add-other,
+body .index-main .question-admin .Questionnaire-2 .answers-3 .add-radio,
+body .index-main .question-admin .Questionnaire-2 .answers-3 .add-other,
+body .index-main .question-admin .Questionnaire-2 .answers-4 .add-radio,
+body .index-main .question-admin .Questionnaire-2 .answers-4 .add-other,
+body .index-main .question-admin .Questionnaire-3 .answers-1 .add-radio,
+body .index-main .question-admin .Questionnaire-3 .answers-1 .add-other,
+body .index-main .question-admin .Questionnaire-3 .answers-2 .add-radio,
+body .index-main .question-admin .Questionnaire-3 .answers-2 .add-other,
+body .index-main .question-admin .Questionnaire-3 .answers-3 .add-radio,
+body .index-main .question-admin .Questionnaire-3 .answers-3 .add-other,
+body .index-main .question-admin .Questionnaire-3 .answers-4 .add-radio,
+body .index-main .question-admin .Questionnaire-3 .answers-4 .add-other,
+body .index-main .question-admin .Questionnaire-4 .answers-1 .add-radio,
+body .index-main .question-admin .Questionnaire-4 .answers-1 .add-other,
+body .index-main .question-admin .Questionnaire-4 .answers-2 .add-radio,
+body .index-main .question-admin .Questionnaire-4 .answers-2 .add-other,
+body .index-main .question-admin .Questionnaire-4 .answers-3 .add-radio,
+body .index-main .question-admin .Questionnaire-4 .answers-3 .add-other,
+body .index-main .question-admin .Questionnaire-4 .answers-4 .add-radio,
+body .index-main .question-admin .Questionnaire-4 .answers-4 .add-other {
+  display: none;
+}
+body .index-main .question-admin .Questionnaire-1 .answers-1 input,
+body .index-main .question-admin .Questionnaire-1 .answers-2 input,
+body .index-main .question-admin .Questionnaire-1 .answers-3 input,
+body .index-main .question-admin .Questionnaire-1 .answers-4 input,
+body .index-main .question-admin .Questionnaire-2 .answers-1 input,
+body .index-main .question-admin .Questionnaire-2 .answers-2 input,
+body .index-main .question-admin .Questionnaire-2 .answers-3 input,
+body .index-main .question-admin .Questionnaire-2 .answers-4 input,
+body .index-main .question-admin .Questionnaire-3 .answers-1 input,
+body .index-main .question-admin .Questionnaire-3 .answers-2 input,
+body .index-main .question-admin .Questionnaire-3 .answers-3 input,
+body .index-main .question-admin .Questionnaire-3 .answers-4 input,
+body .index-main .question-admin .Questionnaire-4 .answers-1 input,
+body .index-main .question-admin .Questionnaire-4 .answers-2 input,
+body .index-main .question-admin .Questionnaire-4 .answers-3 input,
+body .index-main .question-admin .Questionnaire-4 .answers-4 input {
   margin: 0 5px;
 }
-body main .Questionnaire-1 .answers-4,
-body main .Questionnaire-2 .answers-4,
-body main .Questionnaire-3 .answers-4,
-body main .Questionnaire-4 .answers-4 {
-  width: 45%;
+body .index-main .question-admin .Questionnaire-1 .answers-4,
+body .index-main .question-admin .Questionnaire-2 .answers-4,
+body .index-main .question-admin .Questionnaire-3 .answers-4,
+body .index-main .question-admin .Questionnaire-4 .answers-4 {
   border: 1px solid grey;
   padding: 5px;
+  resize: none;
 }
-body main .user-submit {
-  width: 200px;
-  height: 50px;
-  margin-top: 50px;
+body .index-main .question-admin .Questionnaire-1 .form-add,
+body .index-main .question-admin .Questionnaire-2 .form-add,
+body .index-main .question-admin .Questionnaire-3 .form-add,
+body .index-main .question-admin .Questionnaire-4 .form-add {
+  width: 30px;
+  height: 40%;
+  font-size: 26px;
+  text-align: center;
+  padding-bottom: 5px;
 }
-body main .admin-function {
+body .index-main .question-admin .finished-form {
   width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 200px;
+}
+body .index-main .question-admin .finished-form .question-list {
+  width: 100%;
+  min-height: 100px;
+  border-radius: 20px;
+  background-color: white;
+}
+body .index-main .question-admin .finished-form .admin-function {
+  width: 400px;
   height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: lightgrey;
-  display: none;
+  position: fixed;
+  bottom: 20px;
 }
-body main .admin-function .admin-input {
+body .index-main .question-admin .finished-form .admin-function .admin-input {
   width: 400px;
   height: 30px;
 }
-body main .admin-function .admin-submit {
+body .index-main .question-admin .finished-form .admin-function .admin-submit {
   width: 200px;
   height: 50px;
 }
@@ -240,6 +347,11 @@ body main .admin-function .admin-submit {
   min-height: 90vh;
   display: flex;
   justify-content: center;
+  background-image: url(/images/iso.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 100px;
 }
 .user-main .register-box {
   width: 100%;
@@ -256,6 +368,7 @@ body main .admin-function .admin-submit {
   justify-content: space-evenly;
   align-items: center;
   background-color: silver;
+  border-radius: 5%;
 }
 .user-main .register-box .form-box .form-content {
   width: 60%;
@@ -265,11 +378,29 @@ body main .admin-function .admin-submit {
   justify-content: space-evenly;
   align-items: center;
 }
+.user-main .register-box .form-box .form-content input {
+  height: 25px;
+  border-radius: 5px;
+}
 .user-main .register-box .form-box .form-content .forgot-pass-link {
   font-size: 12px;
 }
+.user-main .register-box .form-box .form-content .policy-text {
+  display: flex;
+  align-items: center;
+}
 .user-main .register-box .form-box .form-content .policy-text .agree {
   font-size: 14px;
+}
+.user-main .register-box .login {
+  background-image: url(/images/login.jpg);
+  background-position: top;
+  background-size: cover;
+}
+.user-main .register-box .signup {
+  background-image: url(/images/registration.webp);
+  background-position: top;
+  background-size: cover;
 }
 .user-main .profile-info {
   width: 100%;
@@ -279,20 +410,37 @@ body main .admin-function .admin-submit {
   display: none;
 }
 .user-main .profile-info .user-info {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: grey;
+  background-color: silver;
   border-radius: 20%;
+  background-image: url(/images/info.png);
+  background-position: center;
+  background-size: cover;
 }
-.user-main .profile-info .user-info .profile-image {
+.user-main .profile-info .user-info .info-box {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.user-main .profile-info .user-info .info-box .profile-image {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: lightgray;
+}
+.user-main .profile-info .user-info .info-box .info {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 10px;
 }
 
 .files-main {
@@ -300,41 +448,48 @@ body main .admin-function .admin-submit {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  margin-top: 150px;
+}
+.files-main .draft-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.files-main .draft-box .file-draft {
+  width: 90%;
+  margin: 0 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
   background-color: lightgray;
 }
-.files-main .file-draft {
-  width: 90%;
-  margin-top: 20px;
+.files-main .draft-box .file-draft .draft-minibox {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  border: 1px solid gray;
 }
-.files-main .file-draft .draft {
+.files-main .draft-box .file-draft .draft-minibox .draft {
   width: 50px;
-  height: 50px;
+  min-height: 50px;
   margin: 10px;
   border: 1px solid gray;
 }
-.files-main .file-box {
-  width: 100%;
+.files-main .draft-box .file-draft .draft-minibox .draft-name {
+  max-width: 90%;
+  text-wrap: wrap;
+}
+.files-main .draft-box .file-box {
+  width: 90%;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 10px 0;
+  background-color: lightgray;
 }
-.files-main .file-box .files {
-  width: 40%;
-  height: 100%;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid gray;
-}
-.files-main .file-box .files1 {
+.files-main .draft-box .file-box .files1 {
   width: 5%;
   height: 50px;
   display: flex;
@@ -342,6 +497,28 @@ body main .admin-function .admin-submit {
   justify-content: center;
   border: 1px solid gray;
 }
-.files-main .file-saved {
-  margin: 1px 0;
+.files-main .draft-box .file-box .files {
+  width: 65%;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gray;
+}
+.files-main .draft-box .file-box .file-data {
+  width: 25%;
+}
+.files-main .draft-box .user-results {
+  width: 90%;
+  padding-bottom: 100px;
+}
+.files-main .draft-box .user-results .file-saved {
+  width: 100%;
+  margin: 5px 0;
+}
+.files-main .download {
+  height: 50px;
+  position: fixed;
+  bottom: 25px;
 }
