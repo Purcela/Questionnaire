@@ -94,6 +94,9 @@ body header a img {
   height: 50px;
   border-radius: 50%;
 }
+body header .complated-icon {
+  display: none;
+}
 body .index-main {
   width: 80%;
   min-height: 90vh;
