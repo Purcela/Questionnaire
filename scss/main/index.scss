@@ -1,101 +1,211 @@
-.user-main {  
-        width: 80%;
-        min-height: 90vh;
-        display: flex;
-        justify-content: center;
-        background-image: url(/images/iso.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin-top: 100px;  
-    .register-box { 
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+    background-image: url(/images/back.jpg);
+    background-position: center;
+    background-size: cover;
+    header {
         width: 100%;
+        height: 80px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        .form-box {
-            width: 50%;
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            background-color: silver;
-            border-radius: 5%;
-            padding-top: 25px;
-            .form-content {
-                width: 60%;
-                height: 150px;
+        background-image: url(/images/cybersecurity.jpg);
+        background-position: center;
+        position: fixed;
+        a {
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+        }
+        // .complated-icon {
+        //     display: none;
+        // }
+        // .work-icon {
+        //     display: none;
+        // }
+    }  
+    .index-main {
+        width: 80%;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        .questions-box {  
+            width: 100%;
+                // display: none;      
+            .question-user {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-evenly;
                 align-items: center;
-                input {
-                    height: 25px;
-                    border-radius: 5px;
+                .question-list1 {
+                    width: 100%;
+                    min-height: 500px;
+                }     
+                .user-submit {
+                    width: 200px;
+                    height: 50px;
+                    position: fixed;
+                    bottom: 25px;
                 }
-                .forgot-pass-link {
-                    font-size: 12px;
+            }
+        }
+        .question-admin {
+            width: 100%;
+            display: none;
+            .question-head {
+                width: 100%;
+                min-height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .Questionnaire-info {
+                    width: 95%;
+                    height: 80px;
+                    text-align: center;
+                    resize: none;
+                    padding: 5px;
                 }
-                .policy-text {
+                .form-add {
+                    width: 30px;
+                    height: 40px;
+                    font-size: 26px;
+                }
+            } 
+            .Necessary-box {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .Necessary {
+                    width: 95%;
+                    height: 150px;            
+                    padding: 0 50px;
+                    margin-top: 30px;
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: center;
-                    .agree {
-                        font-size: 14px;
+                    justify-content: space-between;                    
+                    border: 1px solid grey;
+                    border-radius: 20px;
+                    .Necessary-1,
+                    .Necessary-2,
+                    .Necessary-3,
+                    .Necessary-4 {
+                        width: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;                
+                        input,
+                        select {
+                            width: 100%;
+                        }
+                    }
+                    .Necessary-4 {
+                        width: 100%;
+                    }
+                }
+                .form-add {
+                    width: 30px;
+                    height: 40%;
+                    font-size: 26px;
+                    text-align: center;
+                    padding-bottom:5px ;
+                } 
+            }    
+            .Questionnaire-1 {
+                margin-top: 30px;
+            }
+            .Questionnaire-1,
+            .Questionnaire-2,
+            .Questionnaire-3,
+            .Questionnaire-4 {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .question {
+                    width: 45%;
+                    height: 40px;
+                    border: 1px solid grey;
+                    margin: 0 10px;
+                    padding: 5px;                   
+                    resize: none;
+                }
+                .answers-1,
+                .answers-2,
+                .answers-3,
+                .answers-4 {
+                    width: 45%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .add-radio,
+                    .add-other {
+                        display: none;
+                    }
+                    input {
+                        margin: 0 5px;
+                    }
+                }
+                .answers-4 {
+                    border: 1px solid grey;
+                    padding: 5px;
+                    resize: none;
+                }
+                .form-add {
+                    width: 30px;
+                    height: 40%;
+                    font-size: 26px;
+                    text-align: center;
+                    padding-bottom:5px ;
+                }
+            }
+            .finished-form {
+                width: 100%;
+                min-height: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid grey;
+                border-radius: 20px;
+                background-color: white;
+                margin-bottom: 200px;
+                .question-list {
+                    width: 100%;
+                    min-height: 100px;
+                    border-radius: 20px;
+                    background-color: white;
+                }
+                .admin-function {
+                    width: 400px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    position: fixed;
+                    bottom: 20px;
+                    .admin-input {
+                        width: 400px;
+                        height: 30px;
+                    }
+                    .admin-submit {                
+                        width: 200px;
+                        height: 50px;
                     }
                 }
             }
-        }
-        .login {
-            background-image: url(/images/login.jpg);
-            background-position:top;
-            background-size: cover;
-        }
-        .signup {
-            background-image: url(/images/registration.webp);
-            background-position:top;
-            background-size: cover;
-        }
-        
-    }
-    .profile-info {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: none;
-        .user-info {
-            width: 400px;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            background-color: silver;
-            border-radius: 5%;
-            background-image: url(/images/info.png);
-            background-position: center;
-            background-size: cover;
-            .info-box {
-                width: 90%;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                .profile-image {
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 50%;
-                    background-color: lightgray;
-                }
-                .info {
-                    width: 200px;
-                    height: 100px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    padding-left: 10px;
-                }
-            }
+            
         }
     }
 }

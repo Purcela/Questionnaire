@@ -1,0 +1,101 @@
+.user-main {  
+        width: 80%;
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        background-image: url(/images/iso.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: 100px;  
+    .register-box { 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .form-box {
+            width: 50%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: silver;
+            border-radius: 5%;
+            padding-top: 25px;
+            .form-content {
+                width: 60%;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                input {
+                    height: 25px;
+                    border-radius: 5px;
+                }
+                .forgot-pass-link {
+                    font-size: 12px;
+                }
+                .policy-text {
+                    display: flex;
+                    align-items: center;
+                    .agree {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .login {
+            background-image: url(/images/login.jpg);
+            background-position:top;
+            background-size: cover;
+        }
+        .signup {
+            background-image: url(/images/registration.webp);
+            background-position:top;
+            background-size: cover;
+        }
+        
+    }
+    .profile-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        .user-info {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: silver;
+            border-radius: 5%;
+            background-image: url(/images/info.png);
+            background-position: center;
+            background-size: cover;
+            .info-box {
+                width: 90%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                .profile-image {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    background-color: lightgray;
+                }
+                .info {
+                    width: 200px;
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
