@@ -369,6 +369,7 @@ body .index-main .question-admin .finished-form .admin-function .admin-submit {
   align-items: center;
   background-color: silver;
   border-radius: 5%;
+  padding-top: 25px;
 }
 .user-main .register-box .form-box .form-content {
   width: 60%;
