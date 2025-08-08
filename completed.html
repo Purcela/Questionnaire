@@ -17,58 +17,89 @@
 <body>
     <header class="admin-header">
         <a class="index-icon" href="index.html">
-            <img src="images/create.jpg" alt="index">
-        </a>
-        <a class="register-icon" href="register.html">
             <img src="images/user.png" alt="index">
         </a>
+        <a class="work-icon" href="work.html">
+            <img src="images/create.jpg" alt="work">
+        </a>
         <a class="complated-icon" href="completed.html">
-            <img src="images/complated.jpg" alt="lists">
+            <img src="images/complated.jpg" alt="completed">
         </a>
     </header>
     <main class="files-main">
-        <div class="draft-box">
+        <div class="user-draft">
             <div class="file-draft">
-                <div class="draft-minibox">
+                <div class="draft-userbox">
                     <div class="draft">   </div>
                     <h3 class="draft-name">  </h3>
+                    <p class="draft-userdata">  </p>
+                    <button> <i class="fa-solid fa-arrow-down"></i> </button>
                 </div>
-                <div class="draft-minibox">
+                <div class="draft-userbox">
                     <div class="draft">   </div>
                     <h3 class="draft-name">  </h3>
+                    <p class="draft-userdata">  </p>
+                    <button> <i class="fa-solid fa-arrow-down"></i> </button>
                 </div>
             </div>
-            <div class="file-box sort-bar">
-                <p class="files1 file-N"> # </p>
-                <p class="files1 file-No"> N </p>
-                <div class="files file-name">
-                    <p class="sort-p"> ფაილის სახელი </p>
-                    <button id="name-sortBtn">
-                        <i class="fa-solid fa-sort"></i>
-                    </button>
-                </div>
-                    <p class="files file-data"> შევსების თარიღი </p>
+            <div class="user-draft-result">  </div>
+        </div>
+
+        <div class="admin-draft">
+            <div class="complated-drafts-sort">
+                <button class="admin-created-drafts"> ჩემი შენახული ასლები </button>
+                <button class="user-complated-drafts"> შევსებული კითხვარები </button>
             </div>
-            <div class="user-results">
-                <div class="file-box file-saved">
-                    <div class="files1 file-check">
+            <div class="admin-draftbox">
+                <div class="file-draft">
+                    <div class="draft-adminbox">
+                        <div class="draft">   </div>
+                        <h3 class="draft-name">  </h3>
+                        <p class="draft-admindata"></p>
+                        <button> <i class="fa-solid fa-arrow-down"></i> </button>
+                    </div>                    
+                </div>
+                <div class="admin-draft-result">
+
+                </div>
+            </div>
+            <div class="admin-userbox">
+                <div class="file-box sort-bar">
+                    <div class="files1 file-check select-all">
                         <input type="checkbox" id="select" name="select" value="select">
                     </div>
-                    <p class="files1 file-No">  </p>
-                    <div class="files file-name1">  </div>
-                    <p class="files file-data">  </p>
+                    <p class="files1 file-No"> N </p>
+                    <div class="files file-name">
+                        <p class="sort-p"> ფაილის სახელი </p>
+                        <button id="name-sortBtn">
+                            <i class="fa-solid fa-sort"></i>
+                        </button>
+                    </div>                    
+                        <p class="files create-data"> შექმნის თარიღი 
+                            <button id="name-sortBtn">
+                                <i class="fa-solid fa-sort"></i>
+                            </button>
+                        </p>
+                        <p class="files file-data"> შევსების თარიღი 
+                            <button id="name-sortBtn">
+                                <i class="fa-solid fa-sort"></i>
+                            </button>
+                        </p>
                 </div>
-                <div class="file-box file-saved">
-                    <div class="files1 file-check">
-                        <input type="checkbox" id="select" name="select" value="select">
+                <div class="user-results">
+                    <div class="file-box file-saved">
+                        <div class="files1 file-check">
+                            <input type="checkbox" id="select" name="select" value="select">
+                        </div>
+                        <p class="files1 file-No1">  </p>
+                        <div class="files file-name1">  </div>                   
+                        <p class="files create-data1">   </p>
+                        <p class="files file-data1">   </p>
                     </div>
-                    <p class="files1 file-No">  </p>
-                    <div class="files file-name1">  </div>
-                    <p class="files file-data">  </p>
-                </div>
+                </div>            
+            <button class="download"> მონიშნულის ჩამოტვირთვა </button>
             </div>
         </div>
-        <button class="download"> მონიშნულის ჩამოტვირთვა </button>
     </main>
     <script src="js/script.js"></script>
 </body>

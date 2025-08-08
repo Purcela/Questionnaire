@@ -94,63 +94,63 @@ body header a img {
   height: 50px;
   border-radius: 50%;
 }
-body header .complated-icon {
-  display: none;
-}
-body .index-main {
+body .work-main {
   width: 80%;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
-body .index-main .question-user {
+body .work-main .questions-box {
+  width: 100%;
+}
+body .work-main .questions-box .question-user {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .index-main .question-user .question-list1 {
+body .work-main .questions-box .question-user .question-list1 {
   width: 100%;
   min-height: 500px;
 }
-body .index-main .question-user .user-submit {
+body .work-main .questions-box .question-user .user-submit {
   width: 200px;
   height: 50px;
   position: fixed;
   bottom: 25px;
 }
-body .index-main .question-admin {
+body .work-main .question-admin {
   width: 100%;
   display: none;
 }
-body .index-main .question-admin .question-head {
+body .work-main .question-admin .question-head {
   width: 100%;
   min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body .index-main .question-admin .question-head .Questionnaire-info {
+body .work-main .question-admin .question-head .Questionnaire-info {
   width: 95%;
   height: 80px;
   text-align: center;
   resize: none;
   padding: 5px;
 }
-body .index-main .question-admin .question-head .form-add {
+body .work-main .question-admin .question-head .form-add {
   width: 30px;
   height: 40px;
   font-size: 26px;
 }
-body .index-main .question-admin .Necessary-box {
+body .work-main .question-admin .Necessary-box {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body .index-main .question-admin .Necessary-box .Necessary {
+body .work-main .question-admin .Necessary-box .Necessary {
   width: 95%;
   height: 150px;
   padding: 0 50px;
@@ -162,52 +162,52 @@ body .index-main .question-admin .Necessary-box .Necessary {
   border: 1px solid grey;
   border-radius: 20px;
 }
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-1,
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-2,
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-3,
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-4 {
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-1,
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-2,
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-3,
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-4 {
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-1 input,
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-1 select,
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-2 input,
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-2 select,
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-3 input,
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-3 select,
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-4 input,
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-4 select {
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-1 input,
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-1 select,
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-2 input,
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-2 select,
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-3 input,
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-3 select,
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-4 input,
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-4 select {
   width: 100%;
 }
-body .index-main .question-admin .Necessary-box .Necessary .Necessary-4 {
+body .work-main .question-admin .Necessary-box .Necessary .Necessary-4 {
   width: 100%;
 }
-body .index-main .question-admin .Necessary-box .form-add {
+body .work-main .question-admin .Necessary-box .form-add {
   width: 30px;
   height: 40%;
   font-size: 26px;
   text-align: center;
   padding-bottom: 5px;
 }
-body .index-main .question-admin .Questionnaire-1 {
+body .work-main .question-admin .Questionnaire-1 {
   margin-top: 30px;
 }
-body .index-main .question-admin .Questionnaire-1,
-body .index-main .question-admin .Questionnaire-2,
-body .index-main .question-admin .Questionnaire-3,
-body .index-main .question-admin .Questionnaire-4 {
+body .work-main .question-admin .Questionnaire-1,
+body .work-main .question-admin .Questionnaire-2,
+body .work-main .question-admin .Questionnaire-3,
+body .work-main .question-admin .Questionnaire-4 {
   width: 100%;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .index-main .question-admin .Questionnaire-1 .question,
-body .index-main .question-admin .Questionnaire-2 .question,
-body .index-main .question-admin .Questionnaire-3 .question,
-body .index-main .question-admin .Questionnaire-4 .question {
+body .work-main .question-admin .Questionnaire-1 .question,
+body .work-main .question-admin .Questionnaire-2 .question,
+body .work-main .question-admin .Questionnaire-3 .question,
+body .work-main .question-admin .Questionnaire-4 .question {
   width: 45%;
   height: 40px;
   border: 1px solid grey;
@@ -215,98 +215,98 @@ body .index-main .question-admin .Questionnaire-4 .question {
   padding: 5px;
   resize: none;
 }
-body .index-main .question-admin .Questionnaire-1 .answers-1,
-body .index-main .question-admin .Questionnaire-1 .answers-2,
-body .index-main .question-admin .Questionnaire-1 .answers-3,
-body .index-main .question-admin .Questionnaire-1 .answers-4,
-body .index-main .question-admin .Questionnaire-2 .answers-1,
-body .index-main .question-admin .Questionnaire-2 .answers-2,
-body .index-main .question-admin .Questionnaire-2 .answers-3,
-body .index-main .question-admin .Questionnaire-2 .answers-4,
-body .index-main .question-admin .Questionnaire-3 .answers-1,
-body .index-main .question-admin .Questionnaire-3 .answers-2,
-body .index-main .question-admin .Questionnaire-3 .answers-3,
-body .index-main .question-admin .Questionnaire-3 .answers-4,
-body .index-main .question-admin .Questionnaire-4 .answers-1,
-body .index-main .question-admin .Questionnaire-4 .answers-2,
-body .index-main .question-admin .Questionnaire-4 .answers-3,
-body .index-main .question-admin .Questionnaire-4 .answers-4 {
+body .work-main .question-admin .Questionnaire-1 .answers-1,
+body .work-main .question-admin .Questionnaire-1 .answers-2,
+body .work-main .question-admin .Questionnaire-1 .answers-3,
+body .work-main .question-admin .Questionnaire-1 .answers-4,
+body .work-main .question-admin .Questionnaire-2 .answers-1,
+body .work-main .question-admin .Questionnaire-2 .answers-2,
+body .work-main .question-admin .Questionnaire-2 .answers-3,
+body .work-main .question-admin .Questionnaire-2 .answers-4,
+body .work-main .question-admin .Questionnaire-3 .answers-1,
+body .work-main .question-admin .Questionnaire-3 .answers-2,
+body .work-main .question-admin .Questionnaire-3 .answers-3,
+body .work-main .question-admin .Questionnaire-3 .answers-4,
+body .work-main .question-admin .Questionnaire-4 .answers-1,
+body .work-main .question-admin .Questionnaire-4 .answers-2,
+body .work-main .question-admin .Questionnaire-4 .answers-3,
+body .work-main .question-admin .Questionnaire-4 .answers-4 {
   width: 45%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .index-main .question-admin .Questionnaire-1 .answers-1 .add-radio,
-body .index-main .question-admin .Questionnaire-1 .answers-1 .add-other,
-body .index-main .question-admin .Questionnaire-1 .answers-2 .add-radio,
-body .index-main .question-admin .Questionnaire-1 .answers-2 .add-other,
-body .index-main .question-admin .Questionnaire-1 .answers-3 .add-radio,
-body .index-main .question-admin .Questionnaire-1 .answers-3 .add-other,
-body .index-main .question-admin .Questionnaire-1 .answers-4 .add-radio,
-body .index-main .question-admin .Questionnaire-1 .answers-4 .add-other,
-body .index-main .question-admin .Questionnaire-2 .answers-1 .add-radio,
-body .index-main .question-admin .Questionnaire-2 .answers-1 .add-other,
-body .index-main .question-admin .Questionnaire-2 .answers-2 .add-radio,
-body .index-main .question-admin .Questionnaire-2 .answers-2 .add-other,
-body .index-main .question-admin .Questionnaire-2 .answers-3 .add-radio,
-body .index-main .question-admin .Questionnaire-2 .answers-3 .add-other,
-body .index-main .question-admin .Questionnaire-2 .answers-4 .add-radio,
-body .index-main .question-admin .Questionnaire-2 .answers-4 .add-other,
-body .index-main .question-admin .Questionnaire-3 .answers-1 .add-radio,
-body .index-main .question-admin .Questionnaire-3 .answers-1 .add-other,
-body .index-main .question-admin .Questionnaire-3 .answers-2 .add-radio,
-body .index-main .question-admin .Questionnaire-3 .answers-2 .add-other,
-body .index-main .question-admin .Questionnaire-3 .answers-3 .add-radio,
-body .index-main .question-admin .Questionnaire-3 .answers-3 .add-other,
-body .index-main .question-admin .Questionnaire-3 .answers-4 .add-radio,
-body .index-main .question-admin .Questionnaire-3 .answers-4 .add-other,
-body .index-main .question-admin .Questionnaire-4 .answers-1 .add-radio,
-body .index-main .question-admin .Questionnaire-4 .answers-1 .add-other,
-body .index-main .question-admin .Questionnaire-4 .answers-2 .add-radio,
-body .index-main .question-admin .Questionnaire-4 .answers-2 .add-other,
-body .index-main .question-admin .Questionnaire-4 .answers-3 .add-radio,
-body .index-main .question-admin .Questionnaire-4 .answers-3 .add-other,
-body .index-main .question-admin .Questionnaire-4 .answers-4 .add-radio,
-body .index-main .question-admin .Questionnaire-4 .answers-4 .add-other {
+body .work-main .question-admin .Questionnaire-1 .answers-1 .add-radio,
+body .work-main .question-admin .Questionnaire-1 .answers-1 .add-other,
+body .work-main .question-admin .Questionnaire-1 .answers-2 .add-radio,
+body .work-main .question-admin .Questionnaire-1 .answers-2 .add-other,
+body .work-main .question-admin .Questionnaire-1 .answers-3 .add-radio,
+body .work-main .question-admin .Questionnaire-1 .answers-3 .add-other,
+body .work-main .question-admin .Questionnaire-1 .answers-4 .add-radio,
+body .work-main .question-admin .Questionnaire-1 .answers-4 .add-other,
+body .work-main .question-admin .Questionnaire-2 .answers-1 .add-radio,
+body .work-main .question-admin .Questionnaire-2 .answers-1 .add-other,
+body .work-main .question-admin .Questionnaire-2 .answers-2 .add-radio,
+body .work-main .question-admin .Questionnaire-2 .answers-2 .add-other,
+body .work-main .question-admin .Questionnaire-2 .answers-3 .add-radio,
+body .work-main .question-admin .Questionnaire-2 .answers-3 .add-other,
+body .work-main .question-admin .Questionnaire-2 .answers-4 .add-radio,
+body .work-main .question-admin .Questionnaire-2 .answers-4 .add-other,
+body .work-main .question-admin .Questionnaire-3 .answers-1 .add-radio,
+body .work-main .question-admin .Questionnaire-3 .answers-1 .add-other,
+body .work-main .question-admin .Questionnaire-3 .answers-2 .add-radio,
+body .work-main .question-admin .Questionnaire-3 .answers-2 .add-other,
+body .work-main .question-admin .Questionnaire-3 .answers-3 .add-radio,
+body .work-main .question-admin .Questionnaire-3 .answers-3 .add-other,
+body .work-main .question-admin .Questionnaire-3 .answers-4 .add-radio,
+body .work-main .question-admin .Questionnaire-3 .answers-4 .add-other,
+body .work-main .question-admin .Questionnaire-4 .answers-1 .add-radio,
+body .work-main .question-admin .Questionnaire-4 .answers-1 .add-other,
+body .work-main .question-admin .Questionnaire-4 .answers-2 .add-radio,
+body .work-main .question-admin .Questionnaire-4 .answers-2 .add-other,
+body .work-main .question-admin .Questionnaire-4 .answers-3 .add-radio,
+body .work-main .question-admin .Questionnaire-4 .answers-3 .add-other,
+body .work-main .question-admin .Questionnaire-4 .answers-4 .add-radio,
+body .work-main .question-admin .Questionnaire-4 .answers-4 .add-other {
   display: none;
 }
-body .index-main .question-admin .Questionnaire-1 .answers-1 input,
-body .index-main .question-admin .Questionnaire-1 .answers-2 input,
-body .index-main .question-admin .Questionnaire-1 .answers-3 input,
-body .index-main .question-admin .Questionnaire-1 .answers-4 input,
-body .index-main .question-admin .Questionnaire-2 .answers-1 input,
-body .index-main .question-admin .Questionnaire-2 .answers-2 input,
-body .index-main .question-admin .Questionnaire-2 .answers-3 input,
-body .index-main .question-admin .Questionnaire-2 .answers-4 input,
-body .index-main .question-admin .Questionnaire-3 .answers-1 input,
-body .index-main .question-admin .Questionnaire-3 .answers-2 input,
-body .index-main .question-admin .Questionnaire-3 .answers-3 input,
-body .index-main .question-admin .Questionnaire-3 .answers-4 input,
-body .index-main .question-admin .Questionnaire-4 .answers-1 input,
-body .index-main .question-admin .Questionnaire-4 .answers-2 input,
-body .index-main .question-admin .Questionnaire-4 .answers-3 input,
-body .index-main .question-admin .Questionnaire-4 .answers-4 input {
+body .work-main .question-admin .Questionnaire-1 .answers-1 input,
+body .work-main .question-admin .Questionnaire-1 .answers-2 input,
+body .work-main .question-admin .Questionnaire-1 .answers-3 input,
+body .work-main .question-admin .Questionnaire-1 .answers-4 input,
+body .work-main .question-admin .Questionnaire-2 .answers-1 input,
+body .work-main .question-admin .Questionnaire-2 .answers-2 input,
+body .work-main .question-admin .Questionnaire-2 .answers-3 input,
+body .work-main .question-admin .Questionnaire-2 .answers-4 input,
+body .work-main .question-admin .Questionnaire-3 .answers-1 input,
+body .work-main .question-admin .Questionnaire-3 .answers-2 input,
+body .work-main .question-admin .Questionnaire-3 .answers-3 input,
+body .work-main .question-admin .Questionnaire-3 .answers-4 input,
+body .work-main .question-admin .Questionnaire-4 .answers-1 input,
+body .work-main .question-admin .Questionnaire-4 .answers-2 input,
+body .work-main .question-admin .Questionnaire-4 .answers-3 input,
+body .work-main .question-admin .Questionnaire-4 .answers-4 input {
   margin: 0 5px;
 }
-body .index-main .question-admin .Questionnaire-1 .answers-4,
-body .index-main .question-admin .Questionnaire-2 .answers-4,
-body .index-main .question-admin .Questionnaire-3 .answers-4,
-body .index-main .question-admin .Questionnaire-4 .answers-4 {
+body .work-main .question-admin .Questionnaire-1 .answers-4,
+body .work-main .question-admin .Questionnaire-2 .answers-4,
+body .work-main .question-admin .Questionnaire-3 .answers-4,
+body .work-main .question-admin .Questionnaire-4 .answers-4 {
   border: 1px solid grey;
   padding: 5px;
   resize: none;
 }
-body .index-main .question-admin .Questionnaire-1 .form-add,
-body .index-main .question-admin .Questionnaire-2 .form-add,
-body .index-main .question-admin .Questionnaire-3 .form-add,
-body .index-main .question-admin .Questionnaire-4 .form-add {
+body .work-main .question-admin .Questionnaire-1 .form-add,
+body .work-main .question-admin .Questionnaire-2 .form-add,
+body .work-main .question-admin .Questionnaire-3 .form-add,
+body .work-main .question-admin .Questionnaire-4 .form-add {
   width: 30px;
   height: 40%;
   font-size: 26px;
   text-align: center;
   padding-bottom: 5px;
 }
-body .index-main .question-admin .finished-form {
+body .work-main .question-admin .finished-form {
   width: 100%;
   min-height: 200px;
   display: flex;
@@ -317,13 +317,13 @@ body .index-main .question-admin .finished-form {
   background-color: white;
   margin-bottom: 200px;
 }
-body .index-main .question-admin .finished-form .question-list {
+body .work-main .question-admin .finished-form .question-list {
   width: 100%;
   min-height: 100px;
   border-radius: 20px;
   background-color: white;
 }
-body .index-main .question-admin .finished-form .admin-function {
+body .work-main .question-admin .finished-form .admin-function {
   width: 400px;
   height: 150px;
   display: flex;
@@ -333,11 +333,11 @@ body .index-main .question-admin .finished-form .admin-function {
   position: fixed;
   bottom: 20px;
 }
-body .index-main .question-admin .finished-form .admin-function .admin-input {
+body .work-main .question-admin .finished-form .admin-function .admin-input {
   width: 400px;
   height: 30px;
 }
-body .index-main .question-admin .finished-form .admin-function .admin-submit {
+body .work-main .question-admin .finished-form .admin-function .admin-submit {
   width: 200px;
   height: 50px;
 }
@@ -356,13 +356,12 @@ body .index-main .question-admin .finished-form .admin-function .admin-submit {
 .user-main .register-box {
   width: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
 .user-main .register-box .form-box {
-  width: 30%;
-  height: 300px;
+  width: 50%;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -418,7 +417,7 @@ body .index-main .question-admin .finished-form .admin-function .admin-submit {
   justify-content: space-evenly;
   align-items: center;
   background-color: silver;
-  border-radius: 20%;
+  border-radius: 5%;
   background-image: url(/images/info.png);
   background-position: center;
   background-size: cover;
@@ -451,46 +450,137 @@ body .index-main .question-admin .finished-form .admin-function .admin-submit {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
-.files-main .draft-box {
+.files-main .user-draft {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
 }
-.files-main .draft-box .file-draft {
+.files-main .user-draft .file-draft {
   width: 90%;
   margin: 0 0 10px 0;
   display: flex;
   flex-direction: column;
-  border: 1px solid gray;
-  background-color: lightgray;
 }
-.files-main .draft-box .file-draft .draft-minibox {
+.files-main .user-draft .file-draft .draft-userbox {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  border: 1px solid gray;
+  background-color: white;
 }
-.files-main .draft-box .file-draft .draft-minibox .draft {
+.files-main .user-draft .file-draft .draft-userbox .draft {
   width: 50px;
   min-height: 50px;
   margin: 10px;
   border: 1px solid gray;
 }
-.files-main .draft-box .file-draft .draft-minibox .draft-name {
-  max-width: 90%;
+.files-main .user-draft .file-draft .draft-userbox .draft-name {
+  width: 600px;
   text-wrap: wrap;
 }
-.files-main .draft-box .file-box {
+.files-main .user-draft .file-draft .draft-userbox .draft-userdata {
+  width: 200px;
+}
+.files-main .user-draft .user-draft-result {
+  width: 90%;
+  height: auto;
+}
+.files-main .admin-draft {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.files-main .admin-draft .complated-drafts-sort {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+.files-main .admin-draft .complated-drafts-sort button {
+  cursor: pointer;
+  border: 1px solid gray;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.files-main .admin-draft .complated-drafts-sort button.active {
+  background-color: #0d6efd;
+  color: black;
+  border-color: #0d6efd;
+  font-weight: bold;
+}
+.files-main .admin-draft .complated-drafts-sort .admin-created-drafts {
+  width: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+.files-main .admin-draft .complated-drafts-sort .user-complated-drafts {
+  width: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+.files-main .admin-draft .admin-draftbox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.files-main .admin-draft .admin-draftbox .file-draft {
+  width: 90%;
+  margin: 0 0 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid gray;
+  background-color: white;
+}
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .draft {
+  width: 50px;
+  min-height: 50px;
+  margin: 10px;
+  border: 1px solid gray;
+}
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .draft-name {
+  width: 600px;
+  text-wrap: wrap;
+}
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .draft-admindata {
+  width: 200px;
+}
+.files-main .admin-draft .admin-draftbox .admin-draft-result {
+  width: 90%;
+  height: auto;
+}
+.files-main .admin-draft .admin-userbox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.files-main .admin-draft .admin-userbox .file-box {
   width: 90%;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px 0;
-  background-color: lightgray;
+  background-color: white;
 }
-.files-main .draft-box .file-box .files1 {
+.files-main .admin-draft .admin-userbox .file-box .files1 {
   width: 5%;
   height: 50px;
   display: flex;
@@ -498,27 +588,33 @@ body .index-main .question-admin .finished-form .admin-function .admin-submit {
   justify-content: center;
   border: 1px solid gray;
 }
-.files-main .draft-box .file-box .files {
-  width: 65%;
+.files-main .admin-draft .admin-userbox .file-box .files {
+  width: 60%;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid gray;
+  text-align: center;
 }
-.files-main .draft-box .file-box .file-data {
-  width: 25%;
+.files-main .admin-draft .admin-userbox .file-box .create-data,
+.files-main .admin-draft .admin-userbox .file-box .file-data {
+  width: 15%;
 }
-.files-main .draft-box .user-results {
+.files-main .admin-draft .admin-userbox .user-results {
   width: 90%;
   padding-bottom: 100px;
 }
-.files-main .draft-box .user-results .file-saved {
+.files-main .admin-draft .admin-userbox .user-results .file-saved {
   width: 100%;
   margin: 5px 0;
 }
-.files-main .download {
+.files-main .admin-draft .admin-userbox .user-results .file-saved .create-data1,
+.files-main .admin-draft .admin-userbox .user-results .file-saved .file-data1 {
+  width: 15%;
+}
+.files-main .admin-draft .admin-userbox .download {
   height: 50px;
   position: fixed;
   bottom: 25px;

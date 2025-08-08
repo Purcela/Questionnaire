@@ -5,22 +5,27 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-        margin-top: 150px;  
-    .draft-box {
+    margin-top: 100px;  
+    .user-draft {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        display: none;
         .file-draft {
             width: 90%;
             margin: 0 0 10px 0;
             display: flex;
             flex-direction: column;
-            border: 1px solid gray;
-            background-color: lightgray;
-            .draft-minibox {
-                display: flex;
-                align-items: center;
+            .draft-userbox {
+                    width: 100%;
+                    height: 60px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    border: 1px solid gray;
+                    background-color: white;
                 .draft {
                     width: 50px;
                     min-height: 50px;
@@ -28,53 +33,147 @@
                     border: 1px solid gray;
                 }
                 .draft-name {
-                    max-width: 90%;
+                    width: 600px;
                     text-wrap: wrap;
+                }
+                .draft-userdata {
+                    width: 200px;
                 }
             }
         }
-        .file-box {
+        .user-draft-result {
             width: 90%;
-            height: 50px;
+            height: auto;
+        }
+    }
+
+    .admin-draft {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .complated-drafts-sort {
+            width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 10px 0;
-            background-color: lightgray;
-            .files1 {
-                width: 5%;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 1px solid gray;
-            }
-            .files {
-                width: 65%;
-                height: 100%;
-                padding: 0 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                border: 1px solid gray;
-            }
-            .file-data {
-                width: 25%;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+            button {
+            cursor: pointer;
+            border: 1px solid gray;
+            background-color: #f0f0f0; // ღილაკის ფერი по умолчанию
+            transition: background-color 0.3s ease, color 0.3s ease;
+            &.active {
+                background-color: #0d6efd; // ლურჯი ფერი აქტიურისთვის
+                color: black;
+                border-color: #0d6efd;
+                font-weight: bold;
             }
         }
-        .user-results {
-            width: 90%;
-            padding-bottom: 100px;
-            .file-saved {
-                width: 100%;
-                margin: 5px 0;
+            .admin-created-drafts {
+                width: auto;
+                border-radius: 10px;
+                padding: 10px;
+            }
+            .user-complated-drafts {
+                width: auto;
+                border-radius: 10px;
+                padding: 10px;
+            }
+        }
+        .admin-draftbox {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .file-draft {
+                width: 90%;
+                margin: 0 0 10px 0;
+                display: flex;
+                flex-direction: column;
+                .draft-adminbox {
+                    width: 100%;
+                    height: 60px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    border: 1px solid gray;
+                    background-color: white;
+                    .draft {
+                        width: 50px;
+                        min-height: 50px;
+                        margin: 10px;
+                        border: 1px solid gray;
+                    }
+                    .draft-name {
+                        width: 600px;
+                        text-wrap: wrap;
+                    }
+                    .draft-admindata {
+                        width: 200px;
+                    }
+                }
+            }            
+            .admin-draft-result {
+                width: 90%;
+                height: auto;
+            }
+        }
+        .admin-userbox {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .file-box {
+                width: 90%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+                background-color: white;
+                .files1 {
+                    width: 5%;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid gray;
+                }
+                .files {
+                    width: 60%;
+                    height: 100%;
+                    padding: 0 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: 1px solid gray;
+                    text-align: center;
+                }
+                .create-data,
+                .file-data {
+                    width: 15%;
+                }
+            }
+            .user-results {
+                width: 90%;
+                padding-bottom: 100px;
+                .file-saved {
+                    width: 100%;
+                    margin: 5px 0;
+                    .create-data1,
+                    .file-data1 {
+                        width: 15%;
+                    }
+                }
+            }
+            .download {        
+                height: 50px;
+                position: fixed;
+                bottom: 25px;
             }
         }
         
     }
-    .download {        
-        height: 50px;
-        position: fixed;
-        bottom: 25px;
-    }
+    
 }
