@@ -123,6 +123,7 @@ body .index-main .questions-box .question-user .user-submit {
 }
 body .index-main .question-admin {
   width: 100%;
+  display: none;
 }
 body .index-main .question-admin .question-head {
   width: 100%;
