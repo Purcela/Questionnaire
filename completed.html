@@ -30,33 +30,29 @@
         <div class="user-draft">
             <div class="file-draft">
                 <div class="draft-userbox">
-                    <div class="draft">   </div>
-                    <h3 class="draft-name">  </h3>
-                    <p class="draft-userdata">  </p>
-                    <button> <i class="fa-solid fa-arrow-down"></i> </button>
+                    <h3 class="draft-name"> a </h3>
+                    <p class="draft-userdata"> s </p>
+                    <button class="user-download"> <i class="fa-solid fa-arrow-down"></i> </button>
                 </div>
                 <div class="draft-userbox">
-                    <div class="draft">   </div>
                     <h3 class="draft-name">  </h3>
                     <p class="draft-userdata">  </p>
-                    <button> <i class="fa-solid fa-arrow-down"></i> </button>
+                    <button class="user-download"> <i class="fa-solid fa-arrow-down"></i> </button>
                 </div>
             </div>
-            <div class="user-draft-result">  </div>
         </div>
 
         <div class="admin-draft">
             <div class="complated-drafts-sort">
-                <button class="admin-created-drafts"> ჩემი შენახული ასლები </button>
-                <button class="user-complated-drafts"> შევსებული კითხვარები </button>
+                <button class="admin-created-drafts"> ჩემი შექმნილი კითხვარები </button>
+                <button class="user-complated-drafts"> მომხმარებლის შევსებული კითხვარები </button>
             </div>
             <div class="admin-draftbox">
                 <div class="file-draft">
                     <div class="draft-adminbox">
-                        <div class="draft">   </div>
                         <h3 class="draft-name">  </h3>
-                        <p class="draft-admindata"></p>
-                        <button> <i class="fa-solid fa-arrow-down"></i> </button>
+                        <p class="draft-admindata">  </p>
+                        <button class="admin-draft-download"> <i class="fa-solid fa-arrow-down"></i> </button>
                     </div>                    
                 </div>
                 <div class="admin-draft-result">
@@ -69,18 +65,24 @@
                         <input type="checkbox" id="select" name="select" value="select">
                     </div>
                     <p class="files1 file-No"> N </p>
+                    <div class="files1 seen">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
                     <div class="files file-name">
                         <p class="sort-p"> კითხვარის სათაური </p>
                         <button id="name-sortBtn">
                             <i class="fa-solid fa-sort"></i>
                         </button>
                     </div>                    
-                        <p class="files create-data"> მომხმარებლის მეილი </p>
-                        <p class="files file-data"> შევსების თარიღი 
-                            <button id="name-sortBtn">
-                                <i class="fa-solid fa-sort"></i>
-                            </button>
-                        </p>
+                    <p class="files create-data"> სახელი/გვარი  
+                        <button id="name-sortBtn">
+                            <i class="fa-solid fa-sort"></i>
+                        </button>
+                    </p>
+                    <p class="files file-data"> მომხმარებლის მეილი </p>
+                    <div class="download-icon"> 
+                        <i class="fa-solid fa-arrow-down"></i> 
+                    </div>
                 </div>
                 <div class="user-results">
                     <div class="file-box file-saved">
@@ -88,9 +90,15 @@
                             <input type="checkbox" id="select" name="select" value="select">
                         </div>
                         <p class="files1 file-No1">  </p>
-                        <div class="files file-name1">  </div>                   
+                        <div class="files1 seen1">
+                            <i class="seen2 fa-solid fa-check"></i>
+                        </div>
+                        <h3 class="files file-name1">  </h3>  
                         <p class="files create-data1">   </p>
                         <p class="files file-data1">   </p>
+                        <button class="download-bubbon"> 
+                            <i class="fa-solid fa-arrow-down"></i> 
+                        </button>
                     </div>
                 </div>            
             <button class="download"> მონიშნულის ჩამოტვირთვა </button>

@@ -37,74 +37,88 @@
         </div>
         <div class="question-admin">
             <div class="question-head">        
-                <textarea class="Questionnaire-info" name="Questionnaire" id="question-1"></textarea>
-                <button class="form-add"> + </button>                
+                <textarea class="Questionnaire-info" name="Questionnaire" id="question-00"></textarea>
+                <button class="form-add add-question-head">
+                    <i class="fa-solid fa-plus"></i>
+                </button>                
             </div>
             <div class="Necessary-box">
                 <div class="Necessary">
-                    <select class="Necessary-1 choice" id="cars">
-                        <option value="Institution"> აირჩიე დაწესებულება </option>
-                        <option value="Institution-1"> სპეციალური პენიტენციური სამსახური (ადმინისტრაცია) </option>
-                        <option value="Institution-2"> ესკორტირების და სპეციალურ ღონისძიებათა მთავარი სამმართველო  </option>
-                        <option value="Institution-3"> წვევანდელთა გადამზადების ცენტრი </option>
-                        <option value="Institution-4"> N1 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-5"> N2 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-6"> N3 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-7"> N5 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-8"> N6 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-9"> N8 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-10"> N8 პენიტენციური დაწესებულების ნაწილი </option>
-                        <option value="Institution-11"> N10 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-12"> N11 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-13"> N12 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-14"> N14 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-15"> N15 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-16"> N16 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-17"> N17 პენიტენციური დაწესებულება </option>
-                        <option value="Institution-18"> N18 პენიტენციური დაწესებულება </option>
-                    </select>
+                    <form class="Necessary-1 choice" id="Institution" action="/action_page.php" method="get">
+                        <input list="browsers" name="browser" id="browser" placeholder="აირჩიე დაწესებულება">
+                        <datalist id="browsers">
+                            <option value="სპეციალური პენიტენციური სამსახური (ადმინისტრაცია)">
+                            <option value="ესკორტირების და სპეციალურ ღონისძიებათა მთავარი სამმართველო">
+                            <option value="წვევანდელთა გადამზადების ცენტრი">
+                            <option value="N1 პენიტენციური დაწესებულება"> 
+                            <option value="N2 პენიტენციური დაწესებულება"> 
+                            <option value="N3 პენიტენციური დაწესებულება"> 
+                            <option value="N5 პენიტენციური დაწესებულება"> 
+                            <option value="N6 პენიტენციური დაწესებულება"> 
+                            <option value="N8 პენიტენციური დაწესებულება"> 
+                            <option value="N8 პენიტენციური დაწესებულების ნაწილი"> 
+                            <option value="N10 პენიტენციური დაწესებულება"> 
+                            <option value="N11 პენიტენციური დაწესებულება"> 
+                            <option value="N12 პენიტენციური დაწესებულება">  
+                            <option value="N14 პენიტენციური დაწესებულება"> 
+                            <option value="N15 პენიტენციური დაწესებულება">  
+                            <option value="N16 პენიტენციური დაწესებულება"> 
+                            <option value="N17 პენიტენციური დაწესებულება"> 
+                            <option value="N18 პენიტენციური დაწესებულება"> 
+                        </datalist>
+                    </form>
                     <input class="Necessary-2" type="text" id="fname" name="fname" placeholder="სახელი / გვარი" value="">
                     <input class="Necessary-3" type="email" id="email" name="email" placeholder="სამსახურის მეილი:">                
                     <input class="Necessary-4" type="text" id="work" name="work" placeholder="თანამდებობა" value="">
                 </div>
-                <button class="form-add"> + </button>                            
+                <button class="form-add add-Necessary">
+                    <i class="fa-solid fa-plus"></i>
+                </button>                            
             </div>
             <div class="Questionnaire-1">
-                <textarea class="question" type="text" id="question-1" name="question" value=""> </textarea>
+                <textarea class="question-1" type="text" id="question-01" name="question" value=""> </textarea>
                 <form class="answers-1" >
                     <div class="add-radio">
                         <input type="radio" id="yes" name="fav_language" value="HTML">
-                        <label for="html"> --- </label>
+                        <label for="radio1"> --- </label>
                     </div>
                     <div class="add-other">
                         <input type="radio" id="other" name="fav_language" value="HTML">
-                        <label for="radio"> სხვა:
+                        <label for="radio2"> სხვა:
                             <input type="text" id="user-answer" name="answer1" value="">
                         </label>
                     </div>                    
-                    <button class="answer-add"> + </button>
+                    <button class="form-add add-select-one">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
                 </form>
-                <button class="form-add"> + </button>                
+                <button class="form-add add-Questionnaire-1">
+                    <i class="fa-solid fa-plus"></i>
+                </button>                
             </div>
             <div class="Questionnaire-2">
-                <textarea class="question" type="text" id="question-1"></textarea>
+                <textarea class="question-2" type="text" id="question-02"></textarea>
                 <form class="answers-2">
-                    <div class="add-radio add-radio1">
+                    <div class="add-radio1">
                         <input type="checkbox" id="yes" name="answer" value="answer">
-                        <label for="vehicle1"> --- </label>
+                        <label for="checkbox1"> --- </label>
                     </div>
-                    <div class="add-other add-other1">
+                    <div class="add-other1">
                         <input type="checkbox" id="other" name="answer" value="Bike">
-                        <label for="vehicle1"> სხვა:
+                        <label for="checkbox2"> სხვა:
                             <input type="text" id="user-answer" name="answer2" value="">
                         </label> 
                     </div>                   
-                    <button class="answer-add"> + </button>
+                    <button class="form-add add-select-Several">
+                    <i class="fa-solid fa-plus"></i>
+                    </button>
                 </form>
-                <button class="form-add"> + </button>                
+                <button class="form-add add-Questionnaire-2">
+                    <i class="fa-solid fa-plus"></i>
+                </button>                
             </div>
             <div class="Questionnaire-3">
-                <textarea class="question" type="text" id="question-1" name="question" value=""></textarea>
+                <textarea class="question-3" type="text" id="question-03" name="question" value=""></textarea>
                 <form class="rate answers-3">
                     <p> ცუდი </p>
                     <input type="radio" id="star-1" name="rate" value="1" />
@@ -127,14 +141,18 @@
                     <label for="star2" title="text"> 9 </label>
                     <input type="radio" id="star-10" name="rate" value="10" />
                     <label for="star1" title="text"> 10 </label>
-                    <p>   კარდი </p>
+                    <p> კარდი </p>
                 </form> 
-                <button class="form-add"> + </button>                
+                <button class="form-add add-rate">
+                    <i class="fa-solid fa-plus"></i>
+                </button>                
             </div>
             <div class="Questionnaire-4">
-                <textarea class="question" type="text" id="question-1" name="question" value=""></textarea>
+                <textarea class="question-4" type="text" id="question-04" name="question" value=""></textarea>
                 <textarea class="answers-4" type="text" id="text" name="text" value=""></textarea>
-                <button class="form-add"> + </button>
+                <button class="form-add add-text-answer">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
             </div>
             <div class="finished-form">
                 <div class="question-list">

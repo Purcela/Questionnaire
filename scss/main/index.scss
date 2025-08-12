@@ -24,9 +24,9 @@ body {
                 border-radius: 50%;
             }
         }
-        .complated-icon {
-            display: none;
-        }
+        // .complated-icon {
+        //     display: none;
+        // }
     }  
     .index-main {
         width: 80%;
@@ -57,7 +57,7 @@ body {
         }
         .question-admin {
             width: 100%;
-            display: none;
+            // display: none;
             .question-head {
                 width: 100%;
                 min-height: 100px;
@@ -72,9 +72,8 @@ body {
                     padding: 5px;
                 }
                 .form-add {
-                    width: 30px;
-                    height: 40px;
-                    font-size: 26px;
+                    font-size: 20px;
+                    padding-top: 3px;
                 }
             } 
             .Necessary-box {
@@ -101,9 +100,11 @@ body {
                         display: flex;
                         flex-direction: column;
                         align-items: center;                
-                        input,
-                        select {
+                        input {
                             width: 100%;
+                        }
+                        option {
+                            width: 200px;
                         }
                     }
                     .Necessary-4 {
@@ -111,11 +112,8 @@ body {
                     }
                 }
                 .form-add {
-                    width: 30px;
-                    height: 40%;
-                    font-size: 26px;
-                    text-align: center;
-                    padding-bottom:5px ;
+                    font-size: 20px;
+                    padding-top: 3px;
                 } 
             }    
             .Questionnaire-1 {
@@ -130,7 +128,10 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                .question {
+                .question-1,
+                .question-2,
+                .question-3,
+                .question-4 {
                     width: 45%;
                     height: 40px;
                     border: 1px solid grey;
@@ -147,12 +148,18 @@ body {
                     justify-content: space-between;
                     align-items: center;
                     .add-radio,
-                    .add-other {
+                    .add-other,
+                    .add-radio1,
+                    .add-other1 {
                         display: none;
                     }
                     input {
                         margin: 0 5px;
                     }
+                    .form-add {
+                    font-size: 15px;
+                    padding-top: 3px;
+                }
                 }
                 .answers-4 {
                     border: 1px solid grey;
@@ -160,11 +167,8 @@ body {
                     resize: none;
                 }
                 .form-add {
-                    width: 30px;
-                    height: 40%;
-                    font-size: 26px;
-                    text-align: center;
-                    padding-bottom:5px ;
+                    font-size: 20px;
+                    padding-top: 3px;
                 }
             }
             .finished-form {
