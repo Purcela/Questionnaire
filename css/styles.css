@@ -530,7 +530,8 @@ body .index-main .question-admin .finished-form .admin-function .admin-submit {
   display: flex;
   flex-direction: column;
 }
-.files-main .user-draft .file-draft .draft-userbox {
+.files-main .user-draft .file-draft .draft-userbox,
+.files-main .user-draft .file-draft .draft-userbox1 {
   width: 100%;
   height: 60px;
   margin-bottom: 10px;
@@ -540,18 +541,34 @@ body .index-main .question-admin .finished-form .admin-function .admin-submit {
   border: 1px solid gray;
   background-color: white;
 }
-.files-main .user-draft .file-draft .draft-userbox .draft-name {
+.files-main .user-draft .file-draft .draft-userbox .draft-name,
+.files-main .user-draft .file-draft .draft-userbox .draft-name1,
+.files-main .user-draft .file-draft .draft-userbox1 .draft-name,
+.files-main .user-draft .file-draft .draft-userbox1 .draft-name1 {
   width: 70%;
-  padding: 0 5px;
+  padding: 0 10px;
   text-wrap: wrap;
 }
-.files-main .user-draft .file-draft .draft-userbox .draft-userdata {
+.files-main .user-draft .file-draft .draft-userbox .draft-userdata,
+.files-main .user-draft .file-draft .draft-userbox .draft-userdata1,
+.files-main .user-draft .file-draft .draft-userbox1 .draft-userdata,
+.files-main .user-draft .file-draft .draft-userbox1 .draft-userdata1 {
   width: 25%;
-  padding: 0 5px;
+  padding: 0 10px;
 }
-.files-main .user-draft .file-draft .draft-userbox .user-download {
+.files-main .user-draft .file-draft .draft-userbox .user-download,
+.files-main .user-draft .file-draft .draft-userbox .user-download1,
+.files-main .user-draft .file-draft .draft-userbox1 .user-download,
+.files-main .user-draft .file-draft .draft-userbox1 .user-download1 {
   width: 5%;
   height: 60px;
+}
+.files-main .user-draft .file-draft .draft-userbox .user-download1,
+.files-main .user-draft .file-draft .draft-userbox1 .user-download1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
 }
 .files-main .admin-draft {
   width: 100%;
@@ -599,7 +616,8 @@ body .index-main .question-admin .finished-form .admin-function .admin-submit {
   display: flex;
   flex-direction: column;
 }
-.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox {
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox,
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox1 {
   width: 100%;
   height: 60px;
   margin-bottom: 10px;
@@ -609,18 +627,34 @@ body .index-main .question-admin .finished-form .admin-function .admin-submit {
   border: 1px solid gray;
   background-color: white;
 }
-.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .draft-name {
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .draft-name,
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .draft-name1,
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox1 .draft-name,
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox1 .draft-name1 {
   width: 70%;
-  padding: 0 5px;
+  padding: 0 10px;
   text-wrap: wrap;
 }
-.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .draft-admindata {
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .draft-admindata,
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .draft-admindata1,
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox1 .draft-admindata,
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox1 .draft-admindata1 {
   width: 25%;
-  padding: 0 5px;
+  padding: 0 10px;
 }
-.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .admin-draft-download {
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .admin-draft-download,
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .admin-draft-download1,
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox1 .admin-draft-download,
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox1 .admin-draft-download1 {
   width: 5%;
   height: 60px;
+}
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox .admin-draft-download1,
+.files-main .admin-draft .admin-draftbox .file-draft .draft-adminbox1 .admin-draft-download1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
 }
 .files-main .admin-draft .admin-draftbox .admin-draft-result {
   width: 90%;

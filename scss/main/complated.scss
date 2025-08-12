@@ -17,7 +17,8 @@
             margin: 0 0 10px 0;
             display: flex;
             flex-direction: column;
-            .draft-userbox {
+            .draft-userbox,
+            .draft-userbox1 {
                     width: 100%;
                     height: 60px;
                     margin-bottom: 10px;
@@ -26,18 +27,27 @@
                     justify-content: space-around;
                     border: 1px solid gray;
                     background-color: white;
-                .draft-name {
+                .draft-name,
+                .draft-name1 {
                     width: 70%;
-                    padding: 0 5px;
+                    padding: 0 10px;
                     text-wrap: wrap;
                 }
-                .draft-userdata {
+                .draft-userdata,
+                .draft-userdata1 {
                     width: 25%;
-                    padding: 0 5px;
+                    padding: 0 10px;
                 }
-                .user-download {
+                .user-download,
+                .user-download1 {
                     width: 5%;
                     height: 60px;
+                }
+                .user-download1 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid gray;
                 }
             }
         }
@@ -86,7 +96,8 @@
                 margin: 0 0 10px 0;
                 display: flex;
                 flex-direction: column;
-                .draft-adminbox {
+                .draft-adminbox,
+                .draft-adminbox1 {
                     width: 100%;
                     height: 60px;
                     margin-bottom: 10px;
@@ -95,18 +106,27 @@
                     justify-content: space-around;
                     border: 1px solid gray;
                     background-color: white;
-                    .draft-name {
+                    .draft-name,
+                    .draft-name1 {
                         width: 70%;
-                        padding: 0 5px;
+                        padding: 0 10px;
                         text-wrap: wrap;
                     }
-                    .draft-admindata {
+                    .draft-admindata,
+                    .draft-admindata1 {
                         width: 25%;
-                        padding: 0 5px;
+                        padding: 0 10px;
                     }
-                    .admin-draft-download {
+                    .admin-draft-download,
+                    .admin-draft-download1 {
                         width: 5%;
                         height: 60px;
+                    }
+                    .admin-draft-download1 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid gray;
                     }
                 }
             }            
@@ -184,8 +204,6 @@
                 position: fixed;
                 bottom: 25px;
             }
-        }
-        
-    }
-    
+        }        
+    }    
 }
