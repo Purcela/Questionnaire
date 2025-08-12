@@ -129,10 +129,6 @@
                         border: 1px solid gray;
                     }
                 }
-            }            
-            .admin-draft-result {
-                width: 90%;
-                height: auto;
             }
         }
         .admin-userbox {
@@ -169,8 +165,10 @@
                     border: 1px solid gray;
                     text-align: center;
                 }
-                .create-data,
-                .file-data {
+                .creator-name,
+                .creator-name1,
+                .creator-email,
+                .creator-email1 {
                     width: 15%;
                 }
                 .download-icon {

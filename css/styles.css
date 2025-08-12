@@ -656,10 +656,6 @@ body .index-main .question-admin .finished-form .admin-function .admin-submit {
   align-items: center;
   border: 1px solid gray;
 }
-.files-main .admin-draft .admin-draftbox .admin-draft-result {
-  width: 90%;
-  height: auto;
-}
 .files-main .admin-draft .admin-userbox {
   width: 100%;
   display: flex;
@@ -696,8 +692,10 @@ body .index-main .question-admin .finished-form .admin-function .admin-submit {
   border: 1px solid gray;
   text-align: center;
 }
-.files-main .admin-draft .admin-userbox .file-box .create-data,
-.files-main .admin-draft .admin-userbox .file-box .file-data {
+.files-main .admin-draft .admin-userbox .file-box .creator-name,
+.files-main .admin-draft .admin-userbox .file-box .creator-name1,
+.files-main .admin-draft .admin-userbox .file-box .creator-email,
+.files-main .admin-draft .admin-userbox .file-box .creator-email1 {
   width: 15%;
 }
 .files-main .admin-draft .admin-userbox .file-box .download-icon {
